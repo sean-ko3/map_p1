@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) Debug Project",
+            "type": "lldb",
+            "request": "launch",
+            "preLaunchTask": "build debug executable",
+            "program": "${workspaceFolder}/puzzle_debug",
+            "stdio": [
+                "small.txt", // redirect stdin
+                "output1.txt", // redirect stdout
+                null // redirect stderr
+            ],
+            "args": ["-s","-o", "map" ],
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "postDebugTask": "clean workspace"
+        },
+    ]
+}

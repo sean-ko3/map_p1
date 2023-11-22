@@ -1,0 +1,6 @@
+2 4 4 
+//there is a solution but its not a straight shot up from a
+.@.#
+#AA#
+#^..
+#a.?
